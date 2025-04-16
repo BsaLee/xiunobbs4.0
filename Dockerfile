@@ -1,5 +1,5 @@
 # 使用官方 PHP Apache 镜像
-FROM php:7.4-apache
+FROM php:7.2-apache
 
 # 安装必要的 PHP 扩展
 RUN docker-php-ext-install pdo pdo_mysql
