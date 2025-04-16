@@ -19,3 +19,21 @@ COPY .htaccess /var/www/html/.htaccess
 
 # 暴露端口
 EXPOSE 80
+# 设置可写目录权限
+RUN mkdir -p /var/www/html/conf \
+    /var/www/html/log \
+    /var/www/html/tmp \
+    /var/www/html/upload \
+    /var/www/html/plugin
+
+RUN chown -R www-data:www-data /var/www/html/conf \
+    /var/www/html/log \
+    /var/www/html/tmp \
+    /var/www/html/upload \
+    /var/www/html/plugin
+
+RUN chmod -R 775 /var/www/html/conf \
+    /var/www/html/log \
+    /var/www/html/tmp \
+    /var/www/html/upload \
+    /var/www/html/plugin
