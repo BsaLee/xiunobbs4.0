@@ -21,8 +21,7 @@ define('APP_PATH', dirname(__FILE__).'/'); // __DIR__
 
 // !ini_get('zlib.output_compression') AND ob_start('ob_gzhandler');
 
-//ob_start('ob_gzhandler');
-$conf = (@include APP_PATH.'conf/conf.php') OR exit('<script>window.location="install/"</script>');
+
 
 // 兼容 4.0.3 的配置文件	
 !isset($conf['user_create_on']) AND $conf['user_create_on'] = 1;
