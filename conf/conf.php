@@ -7,10 +7,10 @@ return array (
     array (
       'master' => 
       array (
-        'host' => 'sh-cynosdbmysql-grp-pwe9leus.sql.tencentcdb.com:25855',
-        'user' => 'Br112233',
-        'password' => 'Br112233',
-        'name' => 'halo2',
+        'host' => '1.1.1.1:25855',
+        'user' => '11111',
+        'password' => '11111',
+        'name' => '11111',
         'tablepre' => 'bbs_',
         'charset' => 'utf8',
         'engine' => 'myisam',
